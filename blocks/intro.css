@@ -1,4 +1,4 @@
-.content {
+.intro {
     margin: auto;
   padding-top: 92px;
   padding-left: 148px;
@@ -8,7 +8,7 @@
   
 }
 
-.content__title {
+.intro__title {
   font-family: Inter;
   font-size: 54px;
   font-weight: 900;
@@ -16,7 +16,7 @@
   text-align: left;
 }
 
-.content__article {
+.intro__article {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
@@ -24,7 +24,7 @@
   text-align: left;
 }
 
-.content__article-tagname {
+.intro__article-tagname {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
@@ -32,7 +32,7 @@
   text-align: right;
 }
 
-.content__review {
+.intro__review {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
