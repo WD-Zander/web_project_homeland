@@ -1,112 +1,11 @@
 @import url(../vendor/normalize.css);
-
-.page {
-  color: #ffffff;
-}
-
-body {
-  background: #2a2c2f;
-}
-
-.header {
-  padding-top: 34px;
-  display: flex;
-  justify-content: center;
-}
+@import url(../blocks/page.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/logo.css);
+@import url(../blocks/intro.css);
+@import url(../blocks/footer.css);
 
 
-
-
-.lead {
-  margin: auto;
-  padding-top: 91.06px;
-  max-width: 984px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.lead__title {
-  font-family: Inter;
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 58px;
-  text-align: center;
-}
-
-.lead__subtitle {
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: center;
-}
-.lead__image {
-  height:auto;
-  max-width: 100%;
-  max-width: 984px;
-  max-height: 615px;
-}
-
-.intro {
-    margin: auto;
-  padding-top: 92px;
-  padding-left: 148px;
-  padding-right: 302px;
-  max-width: 830px;
-  
-  
-}
-
-.intro__title {
-  font-family: Inter;
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 58px;
-  text-align: left;
-}
-
-.intro__article {
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: left;
-}
-
-.intro__article-tagname {
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: right;
-}
-
-.intro__review {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26.08px;
-  text-align: left;
-}
-
-.footer {
-  margin: auto;
-  display: flex;
-  max-width: 194px;
-
-  padding-top: 92px;
-  padding-bottom: 24px ;
-}
-
-.footer__author {
-  margin: auto;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: right;
-}
 
 @media screen and (max-width: 768px) {
 
@@ -135,7 +34,15 @@ body {
   .header {
     padding-top: 20px;
     justify-content: center;
+
   }
+  .header__logo 
+{
+
+  width: 188px;
+  height: 52px;
+
+}
 
   .lead {
     padding-top: 50px;

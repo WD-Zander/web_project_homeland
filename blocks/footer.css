@@ -1,0 +1,17 @@
+.footer {
+    margin: auto;
+    display: flex;
+    max-width: 194px;
+  
+    padding-top: 92px;
+    padding-bottom: 24px ;
+  }
+  
+  .footer__author {
+    margin: auto;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+  }

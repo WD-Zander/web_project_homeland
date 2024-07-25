@@ -1,0 +1,30 @@
+.lead {
+    margin: auto;
+    padding-top: 91.06px;
+    max-width: 984px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .lead__title {
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: center;
+  }
+  
+  .lead__subtitle {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+  }
+  .lead__image {
+    height:auto;
+    max-width: 100%;
+    max-width: 984px;
+    max-height: 615px;
+  }
