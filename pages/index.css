@@ -2,61 +2,8 @@
 @import url(../blocks/page.css);
 @import url(../blocks/lead.css);
 @import url(../blocks/logo.css);
-@import url(../blocks/intro.css);
+@import url(../blocks/content.css);
 @import url(../blocks/footer.css);
+@import url(../blocks/mediaQuerys.css);
 
 
-
-@media screen and (max-width: 768px) {
-
-  .header {
-    padding-top: 30px;
-    justify-content: center;
-  }
-
-  .lead {
-    padding-top: 90px;
-  }
-
-  .intro {
-    padding: 90px 24px 0;
-  }
-
-
-.footer {
-  padding-top: 88px;
-  padding-bottom: 24px ;
-}
-
-}
-@media screen and (max-width: 320px) {
-
-  .header {
-    padding-top: 20px;
-    justify-content: center;
-
-  }
-  .header__logo 
-{
-
-  width: 188px;
-  height: 52px;
-
-}
-
-  .lead {
-    padding-top: 50px;
-  }
-
-  .intro {
-    padding: 64px 16px 0;
-  }
-
-
-.footer {
-  padding-top: 64px;
-  padding-bottom: 24px ;
-}
-
-
-}
