@@ -1,0 +1,26 @@
+.content {
+    max-width: 984px;
+    padding-top: 92px;
+    margin: auto;
+  }
+
+
+  @media screen and (max-width: 768px) {
+  
+  
+  
+  
+    .content {
+      padding: 90px 24px 0;
+    }
+
+  }
+  
+  @media screen and (max-width: 320px) {
+    .content {
+      padding: 64px 16px 0;
+    }
+  
+   
+  }
+  
