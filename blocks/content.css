@@ -1,26 +1,81 @@
 .content {
-    max-width: 984px;
-    padding-top: 92px;
-    margin: auto;
+  max-width: 984px;
+  padding-top: 92px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 90px 24px 0;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 64px 16px 0;
+  }
+}
+
+.foto-grid {
+  margin: auto;
+  width: 1184px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.foto-grid__image {
+  width: 284px;
+}
 
 
-  @media screen and (max-width: 768px) {
-  
-  
-  
-  
-    .content {
-      padding: 90px 24px 0;
-    }
 
-  }
-  
-  @media screen and (max-width: 320px) {
-    .content {
-      padding: 64px 16px 0;
-    }
-  
-   
-  }
-  
+.places {
+  padding-top: 30px;
+  margin: auto;
+  width: 985px;
+}
+
+.place {
+  margin: auto;
+  width: 990px;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+
+}
+
+.place__title {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  text-align: left;
+}
+.place__paragraph {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.place__artis {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+.place__button {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+}
+
+.place__image {
+  width: 460px;
+  height: 460px;
+}
