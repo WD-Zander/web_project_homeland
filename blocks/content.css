@@ -26,10 +26,9 @@
 }
 
 .foto-grid__image {
-  width: 284px;
+  max-width: 284px;
+  width: 100%;
 }
-
-
 
 .places {
   padding-top: 30px;
@@ -41,41 +40,101 @@
   margin: auto;
   width: 990px;
   display: grid;
-  grid-template-columns: repeat(2 , 1fr);
-
+  gap: 40px 48px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto auto 1fr;
+  
+  grid-template-areas: "title artist" "image description" "buttom description" ;
 }
 
 .place__title {
+  margin: 0;
+  justify-content: center;
   font-family: Inter;
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
   text-align: left;
+  width: 460px;
+  grid-area: title;
+}
+.place__image {
+  width: 460px;
+  max-width: 100%;
+  height: 460px;
+
+  grid-area: image;
+  
+  
 }
 .place__paragraph {
+  margin: 0;
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
+  grid-area: description;
+ }
+  .place__artis {
+    margin: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+   
+    align-items: end;
+    grid-area: artist;
+  }
+.places__artis {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.place__url-heading {
+  color:  #AAAAAA;  
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  letter-spacing: 0.12em;
+  text-align: left;
+
+
 }
 
-.place__artis {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-}
+
+
+
+
 .place__button {
+  
+  grid-area: buttom;
+  background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+  color: white;
+  width: 290px;
+  border-radius: 4px;
+ 
+
+}
+
+.place__button-title{
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;
-  line-height: 21.78px;
-  text-align: left;
+  line-height: 22px;
+  text-align: center;
+
 }
 
-.place__image {
-  width: 460px;
-  height: 460px;
+.place__content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 485px;
+  
 }
