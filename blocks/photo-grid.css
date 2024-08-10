@@ -1,10 +1,9 @@
 .foto-grid {
   margin: auto;
   max-width: 1184px;
-  width: 100%;
+  width: 97%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
- 
   gap: 16px;
 }
 
@@ -14,16 +13,17 @@
 }
 
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (max-width: 760px) {
   .foto-grid {
-    grid-template-columns: repeat(auto);
-  }
-
+    margin: auto;
+    max-width: 720px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(672px, 1fr));
+    gap: 16px;
   }
  
- 
-
-
-@media screen and (max-width: 320px) {
-
   }
+

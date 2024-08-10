@@ -1,5 +1,13 @@
+.places {
+
+  width: 100%;
+  max-width: 985px;
+ padding-top: 92px;
+ margin: auto;
+}
 .place {
-  margin: auto;
+  margin: 10px;
+  margin: 0;
   max-width: 990px;
   width: 100%;
   display: grid;
@@ -7,13 +15,6 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "title artist" "image description" "buttom description";
-}
-.places {
-  padding-top: 30px;
-  margin: auto;
-  max-width: 985px;
-  width: 100%;
-
 }
 
 .place__title {
@@ -28,7 +29,6 @@
   grid-area: title;
 }
 .place__image {
-  
   width: 100%;
   max-width: 460px;
   grid-area: image;
@@ -101,20 +101,21 @@
   grid-row-end: 4;
 }
 
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 760px) {
 
   .place {
     max-width: 720px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    
   }
-
-
-  .foto-grid {
-    width: 93.75%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .places {
+    width: 96%;
   }
+  
+
   .place__title {
     max-width: 340px;
     width: 100%;
@@ -157,13 +158,18 @@
   }
 
   .place__image {
-    
     width: 100%;
     max-width: 340px;
-    grid-area: image;
     aspect-ratio: 1;
   }
+  
+
 }
 
+
 @media screen and (max-width: 320px) {
+
+.place {
+ 
+}
 }
