@@ -39,6 +39,7 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+      
     }
    
     .foto-grid__image {
@@ -48,5 +49,6 @@
     }
     
     }
-  
 
+
+  

@@ -1,13 +1,10 @@
 .places {
-
   width: 100%;
   max-width: 985px;
- padding-top: 92px;
- margin: auto;
+  padding-top: 92px;
+  margin: auto;
 }
 .place {
-  margin: 10px;
-  margin: 0;
   max-width: 990px;
   width: 100%;
   display: grid;
@@ -15,6 +12,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "title artist" "image description" "buttom description";
+  padding-bottom: 40px;
 }
 
 .place__title {
@@ -33,7 +31,13 @@
   max-width: 460px;
   grid-area: image;
   aspect-ratio: 1;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+
+
 .place__paragraph {
   margin: 0;
   font-family: Inter;
@@ -100,9 +104,19 @@
   grid-row-start: 2;
   grid-row-end: 4;
 }
+.place__button:hover {
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
+}
 
+
+.place__image:hover {
+opacity: 0.5;
+}
 
 @media screen and (max-width: 760px) {
+  .place__button {
+    order: 5;
+  }
 
   .place {
     max-width: 720px;
@@ -111,13 +125,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   .places {
     width: 96%;
-    
+    padding-bottom: 88px;
   }
-  
 
   .place__title {
     max-width: 340px;
@@ -127,6 +139,7 @@
     font-weight: 900;
     line-height: 46px;
     text-align: left;
+    order: 1;
   }
   .place__paragraph {
     font-family: Inter;
@@ -136,9 +149,11 @@
     text-align: left;
   }
 
+  .places__artis {
+    order: 2;
+  }
+
   .place__artis {
-   
-    
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
@@ -163,37 +178,36 @@
   }
 
   .place__image {
-    
     max-width: 720px;
     min-width: 320px;
     width: 100%;
     aspect-ratio: 1;
+    order: 4;
   }
-  
-  .places__artis{
+
+  .places__artis {
     max-width: 760px;
     width: 100%;
   }
 
-  .place__content{
+  .place__content {
     max-width: 760px;
     width: 100%;
-
+    order: 3;
   }
-
 }
 
-
 @media screen and (max-width: 320px) {
-
   .place__image {
     width: 100%;
     max-width: 320px;
     aspect-ratio: 1 / 1;
+  }
+
+  .place {
+    max-width: 320px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
 }
 
-.place {
-  max-width: 320px;
-  width: 100%;
-}
-}
