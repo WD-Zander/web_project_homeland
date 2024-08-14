@@ -126,6 +126,7 @@ opacity: 0.5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 320px;
   }
   .places {
     width: 96%;
@@ -180,7 +181,6 @@ opacity: 0.5;
 
   .place__image {
     max-width: 720px;
-    min-width: 320px;
     width: 100%;
     aspect-ratio: 1;
     order: 4;
