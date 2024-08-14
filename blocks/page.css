@@ -1,6 +1,7 @@
 .page {
     color: #ffffff;
     margin: auto;
+    min-width: 320px;
   }
   
   body {
